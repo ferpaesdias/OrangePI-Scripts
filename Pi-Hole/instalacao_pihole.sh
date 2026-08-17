@@ -12,14 +12,14 @@
 set -e
 
 # Configura as variáveis de ambiente
-source .env
+source config/.env
 
 # Download do script de instalação  
 wget -O basic-install.sh https://install.pi-hole.net
 
 # Copiar o arquivo pihole.toml
 mkdir -p /etc/pihole
-cp pihole.toml /etc/pihole/pihole.toml
+cp config/pihole.toml /etc/pihole/pihole.toml
 
 # Instalação do Pi-hole
 bash basic-install.sh --unattended
