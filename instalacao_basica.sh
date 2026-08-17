@@ -30,5 +30,5 @@ sh install.sh --unattended
 chsh -s $(which zsh)
 
 # Alterar o tema do Oh My Zsh para o tema crcandy
-sed -i 's/^ZSH_THEME=".*"/ZSH_THEME="crcandy"/' .zshrc
+sed -i 's/^ZSH_THEME=".*"/ZSH_THEME="crcandy"/' ~/.zshrc
 
