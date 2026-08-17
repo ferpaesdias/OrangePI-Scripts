@@ -1,0 +1,28 @@
+# /etc/pihole/pihole.toml 
+
+[webserver]
+host = "0.0.0.0"
+port = "8080o"
+environment = "production"
+
+[web]
+enable_cors = true
+timeout_seconds = 30
+
+[dns]
+  upstreams = [ "1.1.1.1", "1.0.0.1" ]
+
+  # Interface de rede da placa
+  interface = "end0"
+
+  # LOCAL = responde só à sub-rede local
+  # ALL   = "Permit all origins" — necessário se clientes WireGuard
+  listeningMode = "LOCAL"
+
+[dhcp]
+  active = true
+  start = "192.168.3.11"
+  end = "192.168.3.199"
+  router = "192.168.3.1"
+  netmask = "255.255.255.0"
+  leaseTime = "1d"
