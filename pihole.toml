@@ -15,8 +15,6 @@ timeout_seconds = 30
   # Interface de rede da placa
   interface = "end0"
 
-  # LOCAL = responde só à sub-rede local
-  # ALL   = "Permit all origins" — necessário se clientes WireGuard
   listeningMode = "LOCAL"
 
 [dhcp]
