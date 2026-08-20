@@ -39,5 +39,8 @@ cat << EOF > /etc/wireguard/wg0.conf
   PersistentKeepalive = 25
 EOF
 
+# Ajuste de segurança do arquivo /etc/wireguard/wg0.conf
+chmod 600 /etc/wireguard/wg0.conf
+
 # Iniciar e configurar como serviço o cliente Wireguard
 systemctl enable --now wg-quick@wg0  
