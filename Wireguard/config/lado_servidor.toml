@@ -1,0 +1,13 @@
+# Configurar do lado do servidor.
+# Copie no final do arquivo "/etc/wireguard/wg0.conf" do servidor. 
+# Os valores abaixo são exemplos de uso.
+
+[Peer]
+  # Chave pública do cliente. 
+  # No cliente, após executar o script "instalacao_wireguard_client.sh", execute o comando
+  # "cat /etc/wireguard/client_public.key" para mostrar a chave pública do cliente.
+  PublicKey = mds7p30w/UmKWTSxEJDWdwx5ZAc5uKEnkp4NXtMKEe8s=
+
+  # IPs que terão acesso ao host. 
+  AllowedIPs = 10.10.10.2/32
+
